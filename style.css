@@ -1504,6 +1504,12 @@ footer:after {
     letter-spacing: 0.5px;
 }
 
+.footer-credit-name {
+    color: var(--champagne-soft);
+    font: italic 600 19px/1 "Cormorant Garamond", serif;
+    letter-spacing: 0.03em;
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
