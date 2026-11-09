@@ -333,39 +333,32 @@ setInterval(updateTimer, 1000);
 // BACKGROUND MUSIC
 
 const audio = document.getElementById("bgMusic");
-
 const musicBtn = document.getElementById("musicBtn");
 
+function setMusicButtonState(isPlaying) {
+const label = dict[document.getElementById("lang").value].music;
+musicBtn.innerHTML = `♫ <span>${label}${isPlaying ? " ✓" : ""}</span>`;
+}
+
 musicBtn.addEventListener("click", async () => {
-
-if (!audio.src || !audio.querySelector("source")) {}
-
 if (audio.paused) {
-
-try {
-
-await audio.play();
-
-musicBtn.innerHTML =
-"♫ <span>" +
-(dict[document.getElementById("lang").value].music) +
-" ✓</span>";
-
-} catch (e) {
-
-alert(dict[document.getElementById("lang").value].musicError);
-
-}
-
+  try {
+    await audio.play();
+    setMusicButtonState(true);
+  } catch (e) {
+    alert(dict[document.getElementById("lang").value].musicError);
+  }
 } else {
-
-audio.pause();
-
-musicBtn.innerHTML =
-"♫ <span>" +
-dict[document.getElementById("lang").value].music +
-"</span>";
-
+  audio.pause();
+  setMusicButtonState(false);
 }
+});
 
+audio.volume = 0.7;
+audio.muted = false;
+
+setMusicButtonState(true);
+
+audio.play().catch(() => {
+  setMusicButtonState(false);
 });

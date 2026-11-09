@@ -1,16 +1,16 @@
 :root {
-  --forest: #285447;
-  --forest-strong: #19382f;
-  --forest-soft: #52776a;
-  --champagne: #b58b45;
-  --champagne-soft: #e7d19e;
-  --sand: #f3e7d5;
-  --ivory: #fffaf1;
-  --paper: #f5efe4;
-  --paper-deep: #e8dcc8;
-  --ink: #26312d;
-  --muted: #66716a;
-  --shadow: rgba(25, 56, 47, 0.12);
+  --forest: #4f2f3f;
+  --forest-strong: #2e1b2b;
+  --forest-soft: #8a6173;
+  --champagne: #d7ad64;
+  --champagne-soft: #f4ddac;
+  --sand: #f8efe7;
+  --ivory: #fffaf8;
+  --paper: #f9f1f2;
+  --paper-deep: #efdfe1;
+  --ink: #2d1d25;
+  --muted: #694c5d;
+  --shadow: rgba(46, 27, 43, 0.12);
 }
 
 * {
@@ -153,8 +153,8 @@ select.control {
   text-align: center;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 50% 38%, rgba(255, 250, 241, 0.96) 0%, rgba(255, 250, 241, 0.68) 34%, transparent 68%),
-    radial-gradient(circle at top, var(--ivory) 0%, var(--paper) 52%, var(--paper-deep) 100%);
+    radial-gradient(ellipse at 50% 38%, rgba(255, 250, 247, 0.98) 0%, rgba(255, 244, 241, 0.72) 36%, transparent 68%),
+    radial-gradient(circle at top, #fff9f8 0%, #fceee8 28%, #f6e5e7 58%, #eee1e5 100%);
 }
 
 .hero:before,
@@ -182,12 +182,12 @@ select.control {
   z-index: 2;
   width: min(100%, 740px);
   padding: clamp(26px, 4vw, 42px) clamp(18px, 5vw, 52px) clamp(28px, 4vw, 40px);
-  border: 1px solid rgba(181, 139, 69, 0.3);
+  border: 1px solid rgba(215, 173, 100, 0.4);
   border-radius: 48% 48% 28px 28px / 210px 210px 28px 28px;
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.76), transparent 66%),
-    linear-gradient(180deg, rgba(255, 250, 241, 0.72), rgba(245, 239, 228, 0.48));
-  box-shadow: 0 24px 70px rgba(25, 56, 47, 0.08), inset 0 0 0 6px rgba(255, 255, 255, 0.26);
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.8), transparent 66%),
+    linear-gradient(180deg, rgba(255, 250, 247, 0.8), rgba(245, 228, 232, 0.52));
+  box-shadow: 0 24px 70px rgba(46, 27, 43, 0.08), inset 0 0 0 6px rgba(255, 255, 255, 0.32);
   animation: hero-content-enter 900ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
 }
 
