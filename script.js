@@ -25,7 +25,6 @@ venueNav:"Venue",
 music:"Music",
 invite:"Wedding Invitation",
 heroText:"Together with our families, we invite you to celebrate our wedding and bless the beginning of our new journey.",
-placeShort:"BASTI · UTTAR PRADESH",
 viewEvents:"View the celebrations",
 coupleEyebrow:"Two hearts, one journey",
 coupleTitle:"The Couple",
@@ -88,7 +87,6 @@ venueNav:"स्थान",
 music:"संगीत",
 invite:"विवाह निमंत्रण",
 heroText:"हम अपने परिवारों के साथ आपको विवाह समारोह में सादर आमंत्रित करते हैं। कृपया पधारकर नवदंपति को अपना आशीर्वाद दें।",
-placeShort:"बस्ती · उत्तर प्रदेश",
 viewEvents:"कार्यक्रम देखें",
 coupleEyebrow:"दो दिल, एक सफर",
 coupleTitle:"वर एवं वधू",
@@ -151,7 +149,6 @@ venueNav:"स्थळ",
 music:"संगीत",
 invite:"विवाह निमंत्रण",
 heroText:"आम्ही आमच्या परिवारासह आपणास विवाह सोहळ्यास सस्नेह आमंत्रित करतो. कृपया उपस्थित राहून नवदांपत्याला आशीर्वाद द्यावेत.",
-placeShort:"बस्ती · उत्तर प्रदेश",
 viewEvents:"कार्यक्रम पाहा",
 coupleEyebrow:"दोन मने, एक प्रवास",
 coupleTitle:"वर आणि वधू",
@@ -255,7 +252,7 @@ document.getElementById("lang").addEventListener("change", e => {
 render(e.target.value);
 });
 
-render("en");
+render("hi");
 
 // Keep the navigation highlight in sync with the section in view.
 const sectionLinks = [...document.querySelectorAll('header nav a[href^="#"]')];

@@ -1489,3 +1489,34 @@ footer:after {
     translate: none;
   }
 }
+.footer {
+    width: 100%;
+    padding: 25px 15px;
+    text-align: center;
+    background: linear-gradient(120deg, var(--forest-strong), var(--forest), var(--forest-strong));
+    border-top: 1px solid var(--champagne);
+}
+
+.footer-content p {
+    color: rgba(255, 250, 248, 0.86);
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: var(--champagne-soft);
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--ivory);
+    transform: translateY(-4px);
+}
